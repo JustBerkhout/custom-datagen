@@ -1,0 +1,13 @@
+{
+  "name": "datagen",
+  "config": {
+    "connector.class": "io.confluent.kafka.connect.datagen.DatagenConnector",
+    "kafka.topic": "cars",
+    "schema.filename": "path/to/schemafiles/car-event-schema.avro",
+    "schema.keyfield": "vehicle_id",
+    "key.converter": "org.apache.kafka.connect.converters.IntegerConverter",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "value.converter.schemas.enable": "false",
+    "tasks.max": "1"
+  }
+}

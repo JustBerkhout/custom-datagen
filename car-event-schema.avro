@@ -1,0 +1,55 @@
+{
+  "namespace": "ksql-demo",
+  "name": "car-events",
+  "type": "record",
+  "fields": [{
+          "name": "vehicle_id",
+          "type": {
+              "type": "int",
+              "arg.properties": {
+                  "range": {
+                      "min": 0,
+                      "max": 19
+                  }
+              }
+          }
+      }, {
+          "name": "event",
+          "type": {
+              "type": "string",
+              "arg.properties": {
+                  "options": [
+                      "Right blinker check",
+                      "Left blinker check",
+                      "Break check",
+                      "Alarm check",
+                      "Lock check"
+                  ]
+              }
+          }
+      }, {
+          "name": "event_type",
+          "type": {
+              "type": "string",
+              "arg.properties": {
+                  "options": [
+                      "SUCCESS",
+                      "ERROR"
+                  ]
+              }
+          }
+      }, {
+          "name": "vehicle",
+          "type": {
+              "type": "string",
+              "arg.properties": {
+                  "options": [
+                      "Toyota RAV4",
+                      "Mazda CX-5",
+                      "Isuzu D-Max"
+                  ]
+              }
+          }
+      }
+  ]
+}
