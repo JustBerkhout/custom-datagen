@@ -1,5 +1,5 @@
 {
-  "name": "datagen",
+  "name": "car-event-generator",
   "config": {
     "connector.class": "io.confluent.kafka.connect.datagen.DatagenConnector",
     "kafka.topic": "cars",

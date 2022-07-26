@@ -1,6 +1,6 @@
 {
   "namespace": "ksql-demo",
-  "name": "car-events",
+  "name": "carevents",
   "type": "record",
   "fields": [{
           "name": "vehicle_id",
